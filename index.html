@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jenny Dang Navigation</title>
+  <title>Jenny Dang Posters</title>
   <style>
     body {
       margin: 0;
@@ -40,7 +40,6 @@
       color: white;
     }
 
-    /* Dropdown menu styles */
     .dropdown {
       position: relative;
     }
@@ -78,6 +77,61 @@
     .dropdown:hover .dropdown-menu {
       display: block;
     }
+
+    .page-header {
+      text-align: center;
+      padding: 35px 5px 15px;
+      background-color: #fff0f5;
+    }
+
+    .page-header h1 {
+      color: #d46e91;
+      font-size: 36px;
+      margin: 0;
+      animation: fadeInSlide 1.5s ease-out forwards;
+      opacity: 0;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeInSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      background: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #d46e91;
+    }
+
+    .poster-section {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .poster-section img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .poster-section p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
+    }
   </style>
 </head>
 <body>
@@ -98,5 +152,34 @@
     </ul>
   </nav>
 
+  <div class="page-header">
+    <h1>poster design showcase</h1>
+  </div>
+
+  <section>
+    <h2>project 1: mental health awareness</h2>
+    <div class="poster-section">
+      <img src="poster1.jpg" alt="Mental Health Awareness Poster">
+      <p>This poster was designed to promote mental health awareness on campus, using soft colors and calming visuals to support emotional well-being.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>project 2: student showcase event</h2>
+    <div class="poster-section">
+      <img src="poster2.jpg" alt="Event Poster">
+      <p>A vibrant and energetic poster to advertise a student showcase night. The design emphasizes bold typography and dynamic composition.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>project 3: climate change impact</h2>
+    <div class="poster-section">
+      <img src="poster3.jpg" alt="Social Impact Poster">
+      <p>This poster advocates for climate change awareness, featuring impactful imagery and messaging to inspire environmental responsibility.</p>
+    </div>
+  </section>
+
 </body>
 </html>
+
